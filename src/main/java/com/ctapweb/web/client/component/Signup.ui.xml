@@ -1,0 +1,90 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+
+		<div class="wrapper">
+			<div class="block-center mt-xl wd-xl">
+				<!-- START panel -->
+				<div class="panel panel-dark panel-flat">
+					<div class="panel-heading text-center">
+						<a href="#">
+							<img src="img/logo.svg" width="85" height="34" alt="Logo Image"
+								class="block-center img-rounded" />
+						</a>
+					</div>
+					<div class="panel-body">
+						<p class="text-center pv">SIGNUP TO GET INSTANT ACCESS.</p>
+						<form role="form" class="mb-lg">
+
+							<g:HTMLPanel ui:field="emailFormGroup" styleName="form-group has-feedback">
+								<label class="text-muted">Email address</label>
+								<g:TextBox ui:field="email" styleName="form-control" />
+								<span class="fa fa-envelope form-control-feedback text-muted"></span>
+								<g:Label ui:field="emailError" styleName="text-danger"
+									visible="false" />
+							</g:HTMLPanel>
+
+							<g:HTMLPanel ui:field="passwdFormGroup1" styleName="form-group has-feedback">
+								<label class="text-muted">Password</label>
+								<g:PasswordTextBox ui:field="passwd1"
+									styleName="form-control" />
+								<span class="fa fa-lock form-control-feedback text-muted"></span>
+								<g:Label ui:field="passwdError1" styleName="text-danger"
+									visible="false" />
+							</g:HTMLPanel>
+
+							<g:HTMLPanel ui:field="passwdFormGroup2" styleName="form-group has-feedback">
+								<label class="text-muted">Retype Password</label>
+								<g:PasswordTextBox ui:field="passwd2"
+									styleName="form-control" />
+								<span class="fa fa-lock form-control-feedback text-muted"></span>
+								<g:Label ui:field="passwdError2" styleName="text-danger"
+									visible="false" />
+							</g:HTMLPanel>
+
+							<g:HTMLPanel ui:field="captchaFormGroup" styleName="form-group has-feedback">
+								<p><g:Image url="ctap/captchaImg"></g:Image> </p>
+								<g:TextBox ui:field="captcha" styleName="form-control" />
+								<g:Label ui:field="captchaError" styleName="text-danger"
+									visible="false" />
+							</g:HTMLPanel>
+							<g:HTMLPanel ui:field="termsFormGroup" styleName="form-group has-feedback">
+								<div class="checkbox">
+									<label>
+										<g:CheckBox ui:field="agree">
+											I agree with the
+										</g:CheckBox>
+
+									</label>
+									<g:Anchor ui:field="terms">terms</g:Anchor> and 
+									<g:Anchor ui:field="privacy">privacy policy</g:Anchor> 
+									<g:Label ui:field="termsError" styleName="text-danger"
+										visible="false" />
+								</div>
+							</g:HTMLPanel>
+
+							<g:Button text="Create account" ui:field="signup"
+								styleName="btn btn-block btn-primary mt-lg" />
+						</form>
+						<p class="pt-lg text-center">Have an account?</p>
+						<g:Button styleName="btn btn-block btn-default" ui:field="signin">Sign
+							In</g:Button>
+
+					</div>
+				</div>
+				<!-- END panel -->
+				<div class="p-lg text-center">
+					&copy; 2016 -
+					<a href="http://ctapweb.com">CTAP</a>
+					<br />
+					Tübingen University
+				</div>
+			</div>
+		</div>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

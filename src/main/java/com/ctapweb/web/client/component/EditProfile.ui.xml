@@ -1,0 +1,87 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel styleName="wrapper">
+		<!-- Main section -->
+		<section>
+			<!-- Page content -->
+			<div class="content-wrapper">
+				<div class="content-heading">Edit Profile</div>
+
+				<div class="row">
+
+					<div class="col-lg-3"></div>
+
+					<div class="col-lg-6">
+						<div class="panel panel-default">
+							<!-- <div class="panel-heading text-center"> -->
+							<!-- <h3>Edit User Profile</h3> -->
+							<!-- </div> -->
+							<div class="panel-body">
+								<form class="form-horizontal">
+
+									<g:HTMLPanel ui:field="emailFormGroup" styleName="form-group">
+										<label class="col-lg-4 control-label">Email *</label>
+										<div class="col-lg-8">
+											<g:TextBox ui:field="email" styleName="form-control"
+												enabled="false" />
+<!-- 											<small> -->
+<!-- 												<g:Label ui:field="emailError" styleName="text-danger" -->
+<!-- 													visible="false" /> -->
+<!-- 											</small> -->
+										</div>
+									</g:HTMLPanel>
+
+									<g:HTMLPanel ui:field="passwdFormGroup1" styleName="form-group">
+										<label class="col-lg-4 control-label">New Password *</label>
+										<div class="col-lg-8">
+											<g:PasswordTextBox ui:field="passwd1"
+												styleName="form-control" />
+											<small>
+												<g:Label ui:field="passwdError1" styleName="text-danger"
+													visible="false" />
+											</small>
+										</div>
+									</g:HTMLPanel>
+
+									<g:HTMLPanel ui:field="passwdFormGroup2" styleName="form-group">
+										<label class="col-lg-4 control-label">Repeat New Password *</label>
+										<div class="col-lg-8">
+											<g:PasswordTextBox ui:field="passwd2"
+												styleName="form-control" />
+											<small>
+												<g:Label ui:field="passwdError2" styleName="text-danger"
+													visible="false" />
+											</small>
+										</div>
+									</g:HTMLPanel>
+
+									<div class="form-group">
+										<div class="col-lg-offset-4 col-lg-8">
+											<g:Label ui:field="feedbackLabel" styleName="alert alert-success"
+												text="User profile updated successfully!" visible="false" />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="col-lg-offset-4 col-lg-8">
+											<g:Button text="Update" ui:field="update"
+												styleName="btn btn-sm btn-primary" />
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!-- END panel -->
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

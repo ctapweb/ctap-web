@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<casConsumerDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <implementationName>com.ctapweb.web.server.analysis.DatabaseWriterCasConsumer</implementationName>
+  <processingResourceMetaData>
+    <name>DatabaseWriterCasConsumer</name>
+    <description>Writes the cas contents to the database table 'result'.
+
+The cas contains the following objects:
+1. CorpusTextInfo: id, the corpus text's id in the 'text' table.
+2. For each complexity feature AE, the ae's id from the 'analysis_engine' table and the value of the feature.</description>
+    <version>1.0</version>
+    <vendor>xiaobin</vendor>
+    <configurationParameters>
+      <configurationParameter>
+        <name>analysisID</name>
+        <description>ID of the analysis from the database's 'analysis' table. This is used to trace back to which analysis we are dealing with.</description>
+        <type>Integer</type>
+        <multiValued>false</multiValued>
+        <mandatory>true</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings/>
+    <typeSystemDescription>
+      <imports>
+      <import name="descriptor.type_system.feature_type.ComplexityFeatureBaseType"/>
+      </imports>
+    </typeSystemDescription>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+  <operationalProperties>
+      <modifiesCas>false</modifiesCas>
+      <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </processingResourceMetaData>
+  <resourceManagerConfiguration/>
+</casConsumerDescription>

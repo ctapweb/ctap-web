@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel styleName="wrapper">
+		<!-- Main section -->
+		<section>
+			<!-- Page content -->
+			<div class="content-wrapper">
+				<div class="content-heading">
+					Database Manager
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-12"><g:Button ui:field="initDB">Init DB</g:Button></div>
+				</div>
+				
+				<div class="row">
+					<div class="col-lg-12 col-sm-6">
+						<img src="img/database_structure.svg" width="70%" height="70%" />
+
+					</div>
+					<!-- END widgets box -->
+
+				</div>
+			</div>
+		</section>
+	</g:HTMLPanel>
+</ui:UiBinder> 

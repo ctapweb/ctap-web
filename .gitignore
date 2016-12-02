@@ -1,0 +1,12 @@
+target/
+.classpath
+.project
+.settings/
+src/main/gwt-unitCache/
+src/main/webapp/ctap/
+src/main/webapp/ctap/
+src/main/webapp/META-INF
+src/main/webapp/WEB-INF/classes
+src/main/webapp/WEB-INF/lib
+
+

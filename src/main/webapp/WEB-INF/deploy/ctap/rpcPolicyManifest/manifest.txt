@@ -1,0 +1,9 @@
+# Module ctap
+# RPC service class, partial path of RPC policy file
+com.ctapweb.web.client.service.AnalysisGeneratorService, 85030A4C7A86D5BC6FB57FE70CCCE81D.gwt.rpc
+com.google.gwt.logging.shared.RemoteLoggingService, E73BF90EA1D272FC7908DAEF34D2CA01.gwt.rpc
+com.ctapweb.web.client.service.FeatureSelectorService, EA3B8DB33BBD5ABC30FABB4EC0C3F7D9.gwt.rpc
+com.ctapweb.web.client.service.AdminService, 8760FCC8D2B5018A1A190C11BDF4FE41.gwt.rpc
+com.ctapweb.web.client.service.UserService, 61EF4FD192C1BE23A1AB3E41DCA7FCAE.gwt.rpc
+com.ctapweb.web.client.service.ResultVisualizerService, A6647A551E0DA7B57573C5B531DBC0DD.gwt.rpc
+com.ctapweb.web.client.service.CorpusManagerService, FFE3152690AA8A5F5D181FC0E5820A95.gwt.rpc

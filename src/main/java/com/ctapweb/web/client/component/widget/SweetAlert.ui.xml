@@ -1,0 +1,62 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel ui:field="sweetAlertPanel">
+
+		<div class="sweet-overlay" tabindex="-1" style="opacity: 1; display: block;"></div>
+
+		<!-- shown -->
+<!-- 		<div class="sweet-alert showSweetAlert visible" data-custom-class="" -->
+<!-- 			data-has-cancel-button="false" data-has-confirm-button="true" -->
+<!-- 			data-allow-outside-click="false" data-has-done-function="false" -->
+<!-- 			data-animation="pop" data-timer="null" style="display: block; margin-top: -189px;"> -->
+		<div class="sweet-alert showSweetAlert visible" style="display: block; margin-top: -189px;">
+			<div class="sa-icon sa-error" style="display: none;">
+				<span class="sa-x-mark">
+					<span class="sa-line sa-left"></span>
+					<span class="sa-line sa-right"></span>
+				</span>
+			</div>
+			<div class="sa-icon sa-warning" style="display: none;">
+				<span class="sa-body"></span>
+				<span class="sa-dot"></span>
+			</div>
+			<div class="sa-icon sa-info" style="display: none;"></div>
+			<div class="sa-icon sa-success animate" style="display: block;">
+				<span class="sa-line sa-tip animateSuccessTip"></span>
+				<span class="sa-line sa-long animateSuccessLong"></span>
+
+				<div class="sa-placeholder"></div>
+				<div class="sa-fix"></div>
+			</div>
+			<div class="sa-icon sa-custom" style="display: none;"></div>
+			<h2>Good job!</h2>
+			<p style="display: block;">You clicked the button!</p>
+			<fieldset>
+				<input type="text" tabindex="3" placeholder="" />
+					<div class="sa-input-error"></div>
+			</fieldset>
+			<div class="sa-error-container">
+				<div class="icon">!</div>
+				<p>Not valid!</p>
+			</div>
+			<div class="sa-button-container">
+				<button class="cancel">Cancel</button>
+				<div class="sa-confirm-button-container">
+					<button class="confirm" tabindex="1"
+						style="display: inline-block; box-shadow: rgba(140, 212, 245, 0.8) 0px 0px 2px, rgba(0, 0, 0, 0.0470588) 0px 0px 0px 1px inset; background-color: rgb(140, 212, 245);">OK</button>
+						<g:Button ui:field="closeBtn">close sweet</g:Button>
+					<div class="la-ball-fall">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

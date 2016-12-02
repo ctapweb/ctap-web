@@ -1,0 +1,136 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel styleName="wrapper">
+		<!-- Main section -->
+		<section>
+			<!-- Page content -->
+			<div class="content-wrapper">
+				<div class="content-heading">
+					Dashboard
+				</div>
+				<!-- START widgets box -->
+				<div class="row">
+					<div class="col-lg-4 col-sm-6">
+						<!-- START widget -->
+						<div class="panel widget bg-primary">
+							<div class="row row-table">
+								<div class="col-xs-4 text-center bg-primary-dark pv-lg">
+									<em class="fa fa-database fa-3x"></em>
+								</div>
+								<div class="col-xs-8 pv-lg">
+									<g:Label ui:field="corpusCount" styleName="h2 mt0" />
+									<div class="text-uppercase">Corpora</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6">
+						<!-- START widget -->
+						<div class="panel widget bg-purple">
+							<div class="row row-table">
+								<div class="col-xs-4 text-center bg-purple-dark pv-lg">
+									<em class="fa fa-check-square-o fa-3x"></em>
+								</div>
+								<div class="col-xs-8 pv-lg">
+									<g:Label ui:field="featuresetCount" styleName="h2 mt0" />
+									<div class="text-uppercase">Feature Sets</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12">
+						<!-- START widget -->
+						<div class="panel widget bg-green">
+							<div class="row row-table">
+								<div class="col-xs-4 text-center bg-green-dark pv-lg">
+									<em class="fa fa-tasks fa-3x"></em>
+								</div>
+								<div class="col-xs-8 pv-lg">
+									<g:Label ui:field="analysisCount" styleName="h2 mt0" />
+									<div class="text-uppercase">Analyses</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<!-- END widgets box -->
+					<div class="row">
+						<!-- START dashboard main content -->
+						<div class="col-lg-8">
+							<!-- START chart -->
+							<div class="row">
+								<div class="col-lg-12">
+									<!-- START widget -->
+									<div id="panelChart9" class="panel">
+										<div class="panel-heading bg-primary">
+											<div class="panel-title">Corpus List</div>
+										</div>
+										<div class="panel-body">
+											<!-- <div class="chart-spline flot-chart"></div> -->
+											<g:HTMLPanel ui:field="corpusListPanel" />
+										</div>
+									</div>
+									<!-- END widget -->
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-12">
+									<!-- START widget -->
+									<div class="panel">
+										<div class="panel-heading bg-purple">
+											<div class="panel-title">Feature Set List</div>
+										</div>
+										<div class="panel-body">
+											<!-- <div class="chart-spline flot-chart"></div> -->
+											<g:HTMLPanel ui:field="featuresetListPanel" />
+										</div>
+									</div>
+									<!-- END widget -->
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-12">
+									<!-- START widget -->
+									<div id="panelChart9" class="panel">
+										<div class="panel-heading bg-green">
+											<div class="panel-title">Analysis List</div>
+										</div>
+										<div class="panel-body">
+											<!-- <div class="chart-spline flot-chart"></div> -->
+											<g:HTMLPanel ui:field="analysisListPanel" />
+										</div>
+									</div>
+									<!-- END widget -->
+								</div>
+							</div>
+							<!-- END chart -->
+						</div>
+						<!-- END dashboard main content -->
+						<!-- START dashboard sidebar -->
+						<aside class="col-lg-4">
+							<!-- START loader widget -->
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<div class="panel-title">System Provided Feature List</div>
+								</div>
+								<div class="panel-body">
+									<g:HTMLPanel ui:field="cfListPanel" />
+								</div>
+							</div>
+							<!-- END loader widget -->
+						</aside>
+						<!-- END dashboard sidebar -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

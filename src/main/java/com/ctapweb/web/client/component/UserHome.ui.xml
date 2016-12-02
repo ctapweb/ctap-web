@@ -1,0 +1,200 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel height="100%">
+		<div class="wrapper">
+
+			<!-- top navbar -->
+			<header class="topnavbar-wrapper">
+				<!-- START Top Navbar -->
+				<nav role="navigation" class="navbar topnavbar">
+
+					<!-- START navbar header -->
+					<div class="navbar-header">
+						<a href="#" class="navbar-brand">
+							<div class="brand-logo">
+								<img src="img/logo.svg" alt="App Logo" class="img-responsive"
+									width="85" height="34" />
+							</div>
+							<div class="brand-logo-collapsed">
+								<img src="img/logo-single.svg" alt="App Logo" class="img-responsive" />
+							</div>
+						</a>
+					</div>
+					<!-- END navbar header -->
+
+					<!-- START Nav wrapper -->
+					<div class="nav-wrapper">
+						<!-- START Left navbar -->
+						<ul class="nav navbar-nav">
+
+							<!-- START User avatar toggle -->
+							<li>
+								<g:Anchor ui:field="collapseMenu" styleName="hidden-xs">
+									<em class="fa fa-navicon fa-lg"></em>
+								</g:Anchor>
+							</li>
+							<li>
+
+								<a id="user-block-toggle" href="#user-block" data-toggle="collapse">
+									<em class="fa fa-user fa-lg"></em>
+								</a>
+							</li>
+
+						</ul>
+						<!-- END Left navbar -->
+					</div>
+					<!-- END Nav wrapper -->
+
+				</nav>
+				<!-- END Top Navbar -->
+			</header>
+
+
+
+			<!-- sidebar -->
+			<aside class="aside">
+				<!-- START Sidebar (left) -->
+				<div class="aside-inner">
+					<nav data-sidebar-anyclick-close="" class="sidebar">
+						<!-- START sidebar nav -->
+						<ul class="nav">
+							<!-- START user info -->
+							<li class="has-user-block">
+								<div id="user-block" class="collapse">
+									<div class="item user-block">
+										<!-- User picture -->
+										<div class="user-block-picture">
+											<div class="user-block-status">
+												<i class="fa fa-user fa-3x"></i>
+											</div>
+										</div>
+										<!-- Name and Job -->
+										<div class="user-block-info">
+											<g:Label ui:field="userGreeting" styleName="user-block-name" />
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- END user info -->
+
+							<!-- Iterates over all sidebar items -->
+							<li class="nav-heading ">
+								<span data-localize="sidebar.heading.HEADER">Tools</span>
+							</li>
+							<li class=" ">
+								<g:Anchor ui:field="dashBoard" title="User Home">
+									<em class="fa fa-tachometer fa-lg"></em>
+									<span>Dashboard</span>
+								</g:Anchor>
+
+							</li>
+
+							<li class=" ">
+								<g:Anchor ui:field="corpusManager"
+									title="Manage corpus and texts for analysis">
+									<em class="fa fa-database fa-lg"></em>
+									<span>Corpus Manager</span>
+								</g:Anchor>
+							</li>
+
+							<li class=" ">
+								<g:Anchor ui:field="featureSelector"
+									title="Select complexity features for texts">
+									<em class="fa fa-check-square fa-lg"></em>
+									<span>Feature Selector</span>
+								</g:Anchor>
+							</li>
+
+							<li class=" ">
+								<g:Anchor ui:field="analysisGenerator"
+									title="Generate analysis with features on corpus">
+									<em class="fa fa-cubes fa-lg"></em>
+									<span>Analysis Generator</span>
+								</g:Anchor>
+							</li>
+							<li class=" ">
+								<g:Anchor ui:field="resultVisualizer" title="Visualize analysis results">
+									<em class="fa fa-area-chart fa-lg"></em>
+									<span>Result Visualizer</span>
+								</g:Anchor>
+							</li>
+
+							<li class="nav-heading ">
+								<span data-localize="sidebar.heading.COMPONENTS">User</span>
+							</li>
+							<li class=" ">
+								<g:Anchor ui:field="editProfile" title="Edit Profile">
+									<em class="fa fa-user fa-lg"></em>
+									<span>Profile</span>
+								</g:Anchor>
+							</li>
+
+							<li class=" ">
+								<g:Anchor ui:field="sendFeedback" title="Send Feedback">
+									<em class="fa fa-comment fa-lg"></em>
+									<span>Feedback</span>
+								</g:Anchor>
+							</li>
+
+							<li class=" ">
+								<g:Anchor ui:field="documentation" title="Documentation">
+									<em class="fa fa-book fa-lg"></em>
+									<span>Documentation</span>
+								</g:Anchor>
+							</li>
+
+							<li class=" ">
+								<g:Anchor ui:field="signout" title="Sign Out">
+									<em class="fa fa-power-off fa-lg"></em>
+									<span>Sign Out</span>
+								</g:Anchor>
+							</li>
+
+							<g:HTMLPanel ui:field="adminNav" visible="false">
+								<nav data-sidebar-anyclick-close="" class="sidebar">
+									<ul class="nav">
+										<li class="nav-heading ">
+											<span data-localize="sidebar.heading.COMPONENTS">Admin</span>
+										</li>
+										<li class=" ">
+											<g:Anchor ui:field="dbManager" title="Database Manager">
+												<em class="fa fa-database fa-lg"></em>
+												<span>DB Manager</span>
+											</g:Anchor>
+										</li>
+
+
+										<li class=" ">
+											<g:Anchor ui:field="analysisEngine" title="Manaly analysis engines">
+												<em class="fa fa-cube fa-lg"></em>
+												<span>Analysis Engine</span>
+											</g:Anchor>
+										</li>
+
+
+									</ul>
+								</nav>
+							</g:HTMLPanel>
+
+							<!-- END sidebar nav -->
+						</ul>
+
+					</nav>
+				</div>
+				<!-- END Sidebar (left) -->
+			</aside>
+
+			<g:HTMLPanel ui:field="mainHTMLPanel"></g:HTMLPanel>
+
+			<!-- Page footer -->
+			<footer>
+				&copy; 2016 -
+				<a href="http://ctapweb.com">CTAP</a> - Tübingen University
+			</footer>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

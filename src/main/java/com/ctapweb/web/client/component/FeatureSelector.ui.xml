@@ -1,0 +1,110 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel styleName="wrapper">
+		<!-- Main section -->
+		<section>
+			<!-- Page content -->
+			<div class="content-wrapper">
+				<div class="content-heading">Feature Selector</div>
+
+				<div class="row">
+
+					<!-- feature set list panel -->
+					<g:HTMLPanel ui:field="featureSetListPanel" styleName="col-lg-12">
+
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								Feature Set Operations
+							</div>
+							<div class="panel-body">
+								<g:Button ui:field="newFeatureSet" styleName="btn mb-sm btn-primary btn-labeled" />
+								<g:Button ui:field="deleteSelected" styleName="btn mb-sm btn-danger btn-labeled" />
+
+								<div class="btn-group mb-sm">
+									<button type="button" data-toggle="dropdown"
+										class="btn dropdown-toggle btn-warning btn-labeled">
+										<span class="btn-label"><i class="fa fa-check-square-o"/></span>
+										Select
+										<span class="caret"></span>
+									</button>
+									<ul role="menu" class="dropdown-menu">
+										<li>
+											<g:Anchor ui:field="selectAll">All</g:Anchor>
+										</li>
+										<li>
+											<g:Anchor ui:field="selectClear">Clear</g:Anchor>
+										</li>
+										<li>
+											<g:Anchor ui:field="selectReverse">Reverse</g:Anchor>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<g:HTMLPanel ui:field="feedbackPanel" styleName="alert"
+							visible="false">
+							<em class="fa fa-exclamation-circle fa-lg fa-fw"></em>
+							<g:InlineLabel ui:field="feedbackLabel">feedback</g:InlineLabel>
+							<g:Button ui:field="closeFeedbackPanel" styleName="close"
+								text="X" />
+						</g:HTMLPanel>
+						<p class="lead">List of Feature Set</p>
+						<p>
+							Show
+							<g:ListBox ui:field="nRecords" width="80px">
+								<g:item value="10">10</g:item>
+								<g:item value="20">20</g:item>
+								<g:item value="30">30</g:item>
+								<g:item value="40">40</g:item>
+								<g:item value="50">50</g:item>
+								<g:item value="100">100</g:item>
+							</g:ListBox>
+							records per page
+						</p>
+
+
+					</g:HTMLPanel>
+
+					<!-- Details sidebar -->
+					<g:HTMLPanel ui:field="featureSetDetailPanel" styleName="col-lg-3"
+						visible="false">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								Feature Set Detail
+							</div>
+							<div class="panel-body">
+								<!-- <p class="lead">Corpus detail</p> -->
+								<div class="form-group">
+									<p>Created on</p>
+									<g:TextBox styleName="form-control" enabled="false"
+										ui:field="createdOn" />
+								</div>
+								<div class="form-group">
+									<p>Name *</p>
+									<g:TextBox styleName="form-control" ui:field="featureSetName" />
+									<!-- <input type="text" placeholder="Brief description.." -->
+									<!-- class="form-control" /> -->
+								</div>
+								<div class="form-group">
+									<p>Description</p>
+									<g:TextArea height="200px" styleName="form-control"
+										ui:field="featureSetDescription" />
+								</div>
+								<g:Hidden ui:field="featureSetIdHidden" />
+								<g:Button ui:field="saveDetail" styleName="btn btn-sm btn-primary"
+									text="Save" />
+								<g:Button ui:field="closeDetail" styleName="btn btn-sm"
+									text="Close" />
+							</div>
+						</div>
+					</g:HTMLPanel>
+				</div>
+			</div>
+		</section>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

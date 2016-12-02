@@ -1,0 +1,2 @@
+serviceClass: com.ctapweb.web.client.service.CorpusManagerService
+path: FFE3152690AA8A5F5D181FC0E5820A95.gwt.rpc

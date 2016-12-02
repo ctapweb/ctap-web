@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<h3>Please enter the admin password to initialize the database</h3>
+		<g:PasswordTextBox ui:field="passwd"></g:PasswordTextBox>
+		<g:Button ui:field="initDBbtn">Initialize Database</g:Button>
+	</g:HTMLPanel>
+</ui:UiBinder> 

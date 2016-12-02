@@ -1,0 +1,82 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:style>
+	/* Add CSS here. See the GWT docs on UI Binder for more details */
+	</ui:style>
+	<g:HTMLPanel>
+
+<!-- 		<div class="alert-danger text-center h2"> -->
+<!-- 			<span>This is a demo system that hasn't been tested thuroughly. We -->
+<!-- 				may delete any data on the server any time. -->
+<!-- 				So please don't use it -->
+<!-- 				for production purposes.</span> -->
+<!-- 		</div> -->
+
+		<div class="wrapper">
+			<div class="block-center mt-xl wd-xl">
+				<!-- START panel -->
+				<div class="panel panel-dark panel-flat">
+					<div class="panel-heading text-center">
+						<a href="#">
+							<img src="img/logo.svg" width="85" height="34" alt="Logo Image"
+								class="block-center img-rounded" />
+						</a>
+					</div>
+					<div class="panel-body">
+						<p class="text-center pv">SIGN IN TO CONTINUE.</p>
+						<form role="form" data-parsley-validate="" novalidate=""
+							class="mb-lg">
+
+							<g:HTMLPanel ui:field="emailFormGroup" styleName="form-group has-feedback">
+								<g:TextBox ui:field="email" styleName="form-control" />
+								<span class="fa fa-envelope form-control-feedback text-muted"></span>
+								<g:Label ui:field="emailError" styleName="text-danger"
+									visible="false" />
+							</g:HTMLPanel>
+
+							<g:HTMLPanel ui:field="passwdFormGroup" styleName="form-group has-feedback">
+								<g:PasswordTextBox ui:field="passwd"
+									styleName="form-control" />
+								<span class="fa fa-lock form-control-feedback text-muted"></span>
+								<g:Label ui:field="passwdError" styleName="text-danger"
+									visible="false">Empty or incorrect password.</g:Label>
+							</g:HTMLPanel>
+
+							<div class="clearfix">
+								<div class="checkbox pull-left mt0">
+									<label>
+										<g:CheckBox ui:field="rememberMe">
+											Remember me
+										</g:CheckBox>
+
+									</label>
+								</div>
+								
+								<div class="pull-right">
+									<!-- <a href="recover.html" class="text-muted">Forgot your password?</a> -->
+									<g:Anchor styleName="text-muted" ui:field="forgotPassword">Forgot your
+										password?</g:Anchor>
+								</div>
+							</div>
+							<g:Button styleName="btn btn-block btn-primary mt-lg"
+								ui:field="login" text="Login" />
+						</form>
+						<p class="pt-lg text-center">Need to Signup?</p>
+						<g:Anchor styleName="btn btn-block btn-default" ui:field="newUser">Register
+							Now</g:Anchor>
+					</div>
+				</div>
+				<!-- END panel -->
+				<div class="p-lg text-center">
+					&copy; 2016 -
+					<a href="http://ctapweb.com">CTAP</a>
+					<br />
+					Tübingen University
+				</div>
+			</div>
+		</div>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

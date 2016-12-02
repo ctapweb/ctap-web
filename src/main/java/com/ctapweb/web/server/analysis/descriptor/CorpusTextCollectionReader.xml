@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collectionReaderDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <implementationName>com.ctapweb.web.server.analysis.CorpusTextCollectionReader</implementationName>
+  <processingResourceMetaData>
+    <name>CorpusTextCollectionReader</name>
+    <description>Reads the texts from a corpus. 
+Specify the corpusID parameter.
+
+Outputs CorpusTextInfo, which contains the text's id as a feature.</description>
+    <version>1.0</version>
+    <vendor>xiaobin</vendor>
+    <configurationParameters>
+      <configurationParameter>
+        <name>analysisID</name>
+        <description>id of an analysis, used to extract the corpus according to analysis specification.</description>
+        <type>Integer</type>
+        <multiValued>false</multiValued>
+        <mandatory>true</mandatory>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings/>
+    <typeSystemDescription>
+      <types>
+        <typeDescription>
+          <name>com.ctapweb.web.server.analysis.type.CorpusTextInfo</name>
+          <description/>
+          <supertypeName>uima.cas.AnnotationBase</supertypeName>
+          <features>
+            <featureDescription>
+              <name>id</name>
+              <description/>
+              <rangeTypeName>uima.cas.Long</rangeTypeName>
+            </featureDescription>
+          </features>
+        </typeDescription>
+      </types>
+    </typeSystemDescription>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs>
+          <type allAnnotatorFeatures="true">com.ctapweb.web.server.analysis.type.CorpusTextInfo</type>
+        </outputs>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+  <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
+      <outputsNewCASes>true</outputsNewCASes>
+    </operationalProperties>
+  </processingResourceMetaData>
+  <resourceManagerConfiguration/>
+</collectionReaderDescription>

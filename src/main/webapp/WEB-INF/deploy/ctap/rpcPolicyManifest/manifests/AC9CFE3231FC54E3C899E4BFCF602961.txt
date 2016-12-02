@@ -1,0 +1,2 @@
+serviceClass: com.ctapweb.web.client.service.UserService
+path: 61EF4FD192C1BE23A1AB3E41DCA7FCAE.gwt.rpc

@@ -1,0 +1,2 @@
+serviceClass: com.ctapweb.web.client.service.FeatureSelectorService
+path: EA3B8DB33BBD5ABC30FABB4EC0C3F7D9.gwt.rpc

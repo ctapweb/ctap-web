@@ -1,0 +1,2 @@
+serviceClass: com.ctapweb.web.client.service.AnalysisGeneratorService
+path: 85030A4C7A86D5BC6FB57FE70CCCE81D.gwt.rpc

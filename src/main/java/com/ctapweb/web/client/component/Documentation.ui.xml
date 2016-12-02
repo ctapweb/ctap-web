@@ -1,0 +1,142 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel styleName="wrapper">
+		<!-- Main section -->
+		<section>
+			<!-- Page content -->
+			<div class="content-wrapper">
+				<div class="content-heading">Documentation</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<div id="accordion" role="tablist" aria-multiselectable="true"
+							class="panel-group">
+							<div class="panel panel-default">
+								<div id="headingOne" role="tab" class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+											aria-expanded="true" aria-controls="collapseOne"> What is CTAP?</a>
+									</h4>
+								</div>
+								<div id="collapseOne" role="tabpanel" aria-labelledby="headingOne"
+									class="panel-collapse collapse in">
+									<div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod
+										high life accusamus terry richardson ad squid. 3 wolf moon
+										officia aute, non cupidatat skateboard dolor brunch. Food
+										truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+										moon tempor, sunt aliqua put a bird on it squid single-origin
+										coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+										helvetica, craft beer labore wes anderson cred nesciunt
+										sapiente ea proident. Ad vegan excepteur
+										butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+										denim aesthetic synth nesciunt you probably haven&apos;t heard
+										of them accusamus labore sustainable VHS.</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div id="headingTwo" role="tab" class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+											aria-expanded="false" aria-controls="collapseTwo" class="collapsed">
+											How to use the Corpus Manager?</a>
+									</h4>
+								</div>
+								<div id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo"
+									class="panel-collapse collapse">
+									<div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod
+										high life accusamus terry richardson ad squid. 3 wolf moon
+										officia aute, non cupidatat skateboard dolor brunch. Food
+										truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+										moon tempor, sunt aliqua put a bird on it squid single-origin
+										coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+										helvetica, craft beer labore wes anderson cred nesciunt
+										sapiente ea proident. Ad vegan excepteur
+										butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+										denim aesthetic synth nesciunt you probably haven&apos;t heard
+										of them accusamus labore sustainable VHS.</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div id="headingThree" role="tab" class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+											aria-expanded="false" aria-controls="collapseThree" class="collapsed">
+											How to use the Feature Selector?</a>
+									</h4>
+								</div>
+								<div id="collapseThree" role="tabpanel" aria-labelledby="headingThree"
+									class="panel-collapse collapse">
+									<div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod
+										high life accusamus terry richardson ad squid. 3 wolf moon
+										officia aute, non cupidatat skateboard dolor brunch. Food
+										truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+										moon tempor, sunt aliqua put a bird on it squid single-origin
+										coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+										helvetica, craft beer labore wes anderson cred nesciunt
+										sapiente ea proident. Ad vegan excepteur
+										butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+										denim aesthetic synth nesciunt you probably haven&apos;t heard
+										of them accusamus labore sustainable VHS.</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div id="headingFour" role="tab" class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+											aria-expanded="false" aria-controls="collapseFour" class="collapsed">
+											How to use the Analysis Generator?</a>
+									</h4>
+								</div>
+								<div id="collapseFour" role="tabpanel" aria-labelledby="headingFour"
+									class="panel-collapse collapse">
+									<div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod
+										high life accusamus terry richardson ad squid. 3 wolf moon
+										officia aute, non cupidatat skateboard dolor brunch. Food
+										truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+										moon tempor, sunt aliqua put a bird on it squid single-origin
+										coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+										helvetica, craft beer labore wes anderson cred nesciunt
+										sapiente ea proident. Ad vegan excepteur
+										butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+										denim aesthetic synth nesciunt you probably haven&apos;t heard
+										of them accusamus labore sustainable VHS.</div>
+								</div>
+							</div>
+							<div class="panel panel-default">
+								<div id="headingFive" role="tab" class="panel-heading">
+									<h4 class="panel-title">
+										<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
+											aria-expanded="false" aria-controls="collapseFive" class="collapsed">
+											How to use the visualize analysis results?</a>
+									</h4>
+								</div>
+								<div id="collapseFive" role="tabpanel" aria-labelledby="headingFive"
+									class="panel-collapse collapse">
+									<div class="panel-body">Anim pariatur cliche reprehenderit, enim eiusmod
+										high life accusamus terry richardson ad squid. 3 wolf moon
+										officia aute, non cupidatat skateboard dolor brunch. Food
+										truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+										moon tempor, sunt aliqua put a bird on it squid single-origin
+										coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+										helvetica, craft beer labore wes anderson cred nesciunt
+										sapiente ea proident. Ad vegan excepteur
+										butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw
+										denim aesthetic synth nesciunt you probably haven&apos;t heard
+										of them accusamus labore sustainable VHS.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- END row -->
+
+
+			</div>
+		</section>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 

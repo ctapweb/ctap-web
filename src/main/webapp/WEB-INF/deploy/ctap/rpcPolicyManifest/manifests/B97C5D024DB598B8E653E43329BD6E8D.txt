@@ -1,0 +1,2 @@
+serviceClass: com.ctapweb.web.client.service.ResultVisualizerService
+path: A6647A551E0DA7B57573C5B531DBC0DD.gwt.rpc

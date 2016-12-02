@@ -1,0 +1,2 @@
+serviceClass: com.ctapweb.web.client.service.AdminService
+path: 8760FCC8D2B5018A1A190C11BDF4FE41.gwt.rpc

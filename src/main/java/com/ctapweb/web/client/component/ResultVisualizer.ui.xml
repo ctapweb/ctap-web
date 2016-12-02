@@ -1,0 +1,191 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+	
+	</ui:style>
+	<g:HTMLPanel styleName="wrapper">
+		<!-- Main section -->
+		<section>
+			<!-- Page content -->
+			<div class="content-wrapper">
+				<div class="content-heading">Result Visualizer</div>
+
+				<div class="row">
+					<div class="col-lg-4 panel panel-default">
+						<div class="panel-body">
+
+							<div class="row">
+								<div class="col-lg-8">
+									<div class="form-group">
+										<label class="control-label">Select Analysis</label>
+										<g:ListBox ui:field="analysisListBox" styleName="form-control m-b" />
+									</div>
+								</div>
+								<div class="col-lg-4">
+									<label class="control-label">&nbsp;</label>
+									<g:Button enabled="false" ui:field="downloadResults"
+										styleName="form-control m-b btn-primary">Results</g:Button>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="form-group">
+										<label class="control-label">Plot Title</label>
+										<g:TextBox styleName="form-control" ui:field="plotTitle"
+											enabled="false" />
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-12">
+									<div class="form-group">
+										<label class="control-label">Sub Title</label>
+										<g:TextBox styleName="form-control" ui:field="plotSubtitle"
+											enabled="false" />
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-5">
+									<label class="control-label">Plot Feature 1</label>
+									<g:ListBox ui:field="featureList1" styleName="form-control m-b"
+										enabled="false" width="50" />
+								</div>
+								<div class="col-lg-3">
+									<label class="control-label">&nbsp;</label>
+									<g:ListBox ui:field="statisticsList1" styleName="form-control m-b"
+										enabled="false">
+										<g:item value="avg">Mean</g:item>
+										<g:item value="stddev_samp">SD</g:item>
+										<g:item value="max">Max</g:item>
+										<g:item value="min">Min</g:item>
+									</g:ListBox>
+								</div>
+								<div class="col-lg-4">
+									<div class="form-group">
+										<label class="control-label">&nbsp;</label>
+										<g:ListBox ui:field="plotTypeList1" styleName="form-control m-b"
+											enabled="false">
+											<g:item value="COLUMNS">As Columns</g:item>
+											<g:item value="LINE">As Line</g:item>
+											<g:item value="SPLINE">As Spline</g:item>
+											<g:item value="POINTS">As Points</g:item>
+										</g:ListBox>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-5">
+									<label class="control-label">Plot Feature 2</label>
+									<g:ListBox ui:field="featureList2" styleName="form-control m-b"
+										enabled="false" width="50" />
+								</div>
+								<div class="col-lg-3">
+									<label class="control-label">&nbsp;</label>
+									<g:ListBox ui:field="statisticsList2" styleName="form-control m-b"
+										enabled="false">
+										<g:item value="avg">Mean</g:item>
+										<g:item value="stddev_samp">SD</g:item>
+										<g:item value="max">Max</g:item>
+										<g:item value="min">Min</g:item>
+									</g:ListBox>
+								</div>
+								<div class="col-lg-4">
+									<div class="form-group">
+										<label class="control-label">&nbsp;</label>
+										<g:ListBox ui:field="plotTypeList2" styleName="form-control m-b"
+											enabled="false">
+											<g:item value="COLUMNS">As Columns</g:item>
+											<g:item value="LINE">As Line</g:item>
+											<g:item value="SPLINE">As Spline</g:item>
+											<g:item value="POINTS">As Points</g:item>
+										</g:ListBox>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-5">
+									<label class="control-label">Plot Feature 3</label>
+									<g:ListBox ui:field="featureList3" styleName="form-control m-b"
+										enabled="false" width="50" />
+								</div>
+								<div class="col-lg-3">
+									<label class="control-label">&nbsp;</label>
+									<g:ListBox ui:field="statisticsList3" styleName="form-control m-b"
+										enabled="false">
+										<g:item value="avg">Mean</g:item>
+										<g:item value="stddev_samp">SD</g:item>
+										<g:item value="max">Max</g:item>
+										<g:item value="min">Min</g:item>
+									</g:ListBox>
+								</div>
+								<div class="col-lg-4">
+									<div class="form-group">
+										<label class="control-label">&nbsp;</label>
+										<g:ListBox ui:field="plotTypeList3" styleName="form-control m-b"
+											enabled="false">
+											<g:item value="COLUMNS">As Columns</g:item>
+											<g:item value="LINE">As Line</g:item>
+											<g:item value="SPLINE">As Spline</g:item>
+											<g:item value="POINTS">As Points</g:item>
+										</g:ListBox>
+									</div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-5">
+									<label class="control-label">Legend</label>
+									<g:ListBox ui:field="legendList" styleName="form-control m-b"
+										enabled="false" width="50">
+										<g:item value="SHOW">Show</g:item>
+										<g:item value="HIDE">Hide</g:item>
+									</g:ListBox>
+
+
+								</div>
+								<div class="col-lg-3">
+									<label class="control-label">Position X</label>
+									<g:TextBox styleName="form-control" ui:field="legendPosX"
+										enabled="false">-50</g:TextBox>
+								</div>
+								<div class="col-lg-4">
+									<div class="form-group">
+										<label class="control-label">Position Y</label>
+										<g:TextBox styleName="form-control" ui:field="legendPosY"
+											enabled="false">30</g:TextBox>
+									</div>
+								</div>
+							</div>
+
+
+
+
+							<div class="row">
+								<g:Button ui:field="generateNewPlot" text="Generate New Plot"
+									enabled="false" styleName="btn btn-primary" />
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-8">
+						<g:HTMLPanel ui:field="chartPanel" styleName="col-lg-12">
+						</g:HTMLPanel>
+					</div>
+
+
+					<!--the chart panel -->
+				</div>
+
+
+			</div>
+		</section>
+
+	</g:HTMLPanel>
+</ui:UiBinder> 
