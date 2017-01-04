@@ -562,10 +562,12 @@ implements FeatureSelectorService {
 		//				+ "     AND ae.name ILIKE '%sd%' ";
 		String queryStr = "SELECT COUNT(id) "
 				+ "FROM analysis_engine "
-				+ "WHERE name ILIKE ? ";
+				+ "WHERE name ILIKE ? "
+				+ "     AND type = ? ";
 		try {
 			PreparedStatement ps = dbConnection.prepareStatement(queryStr);
 			ps.setString(1, "%" + keyword + "%");
+			ps.setString(2, AnalysisEngine.AEType.FEATURE_EXTRACTOR);
 			ResultSet rs = ps.executeQuery();
 			if(rs.next()) {
 				featureCount = rs.getInt("count");
@@ -603,15 +605,16 @@ implements FeatureSelectorService {
 		//				+ "LIMIT ? OFFSET ?";
 		String queryStr = "SELECT id, name, version, vendor, description, create_timestamp "
 				+ "FROM analysis_engine "
-				+ "WHERE name ILIKE ? "
+				+ "WHERE name ILIKE ? AND type = ?"
 				+ "ORDER BY id DESC "
 				+ "LIMIT ? OFFSET ?";
 		PreparedStatement ps;
 		try {
 			ps = dbConnection.prepareStatement(queryStr);
 			ps.setString(1, "%" + keyword + "%");
-			ps.setInt(2, limit);
-			ps.setInt(3, offset);
+			ps.setString(2, AnalysisEngine.AEType.FEATURE_EXTRACTOR);
+			ps.setInt(3, limit);
+			ps.setInt(4, offset);
 
 			ResultSet rs = ps.executeQuery();
 
