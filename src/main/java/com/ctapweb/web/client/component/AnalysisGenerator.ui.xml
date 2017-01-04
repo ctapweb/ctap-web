@@ -64,16 +64,31 @@
 						</g:HTMLPanel>
 						<p class="lead">List of Analysis</p>
 						<p>
-							Show
-							<g:ListBox ui:field="nRecords" width="80px">
-								<g:item value="10">10</g:item>
-								<g:item value="20">20</g:item>
-								<g:item value="30">30</g:item>
-								<g:item value="40">40</g:item>
-								<g:item value="50">50</g:item>
-								<g:item value="100">100</g:item>
-							</g:ListBox>
-							records per page
+							<div class="row">
+								<div class="col-md-6">
+									Show
+									<g:ListBox ui:field="nRecords" width="80px">
+										<g:item value="10">10</g:item>
+										<g:item value="20">20</g:item>
+										<g:item value="30">30</g:item>
+										<g:item value="40">40</g:item>
+										<g:item value="50">50</g:item>
+										<g:item value="100">100</g:item>
+									</g:ListBox>
+									records per page
+								</div>
+
+								<div class="col-md-6 text-right">
+									Download results as
+									<g:ListBox ui:field="resultTableType" width="80px">
+										<g:item value="long">Long</g:item>
+										<g:item value="wide">Wide</g:item>
+									</g:ListBox>
+									table
+								</div>
+
+							</div>
+
 						</p>
 
 
@@ -109,7 +124,7 @@
 
 
 								<div class="form-inline form-group">
-								<p>Tag Filter</p>
+									<p>Tag Filter</p>
 									<g:ListBox styleName="form-control" ui:field="tagFilterLogicListBox">
 										<g:item value="NOFILTER">No Tag Filter</g:item>
 										<g:item value="EQUALS">Tag Equals</g:item>
@@ -118,7 +133,8 @@
 										<g:item value="ENDSWITH">Tag Ends with</g:item>
 									</g:ListBox>
 									<g:TextBox ui:field="tagFilterKeyword" styleName="form-control"></g:TextBox>
-									<g:Button styleName="btn btn-default" ui:field="showFilteredText" enabled="false">Show Texts</g:Button>
+									<g:Button styleName="btn btn-default" ui:field="showFilteredText"
+										enabled="false">Show Texts</g:Button>
 								</div>
 
 

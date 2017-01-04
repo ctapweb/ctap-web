@@ -450,7 +450,9 @@ public class ResultVisualizer extends Composite {
 							+ ". Results are downloadable only when the analysis is finished successfully.");
 				} else {
 					// export results for download
-					String url = GWT.getModuleBaseURL() + "exportResultsServlet?analysisID=" + analysis.getId();
+					String url = GWT.getModuleBaseURL() + 
+							"exportResultsServlet?analysisID=" + analysis.getId() +
+							"&tableType=wide";
 					Window.open(url, "_self", "status=0, toolbar=0, menubar=0, location=0");
 				}
 			}
