@@ -150,7 +150,11 @@
 	</dependencies>
 
 	<build>
-
+	    <resources>
+	      <resource>
+		<directory>../ctap-feature/src/main/resources/</directory>
+	      </resource>
+	    </resources>
 		<plugins>
 
 			<!-- GWT Maven Plugin -->
