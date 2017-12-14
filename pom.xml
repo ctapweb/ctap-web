@@ -150,7 +150,18 @@
 	</dependencies>
 
 	<build>
-
+	    <resources>
+	      <resource>
+		<directory>../ctap-feature/src/main/resources/</directory>
+	      </resource>
+	      <resource>
+ 	        <directory>src/main/java</directory>
+	        <includes>
+	           <include>com/ctapweb/web/client/component/**/*.xml</include>
+	           <include>com/ctapweb/web/server/analysis/descriptor/*.xml</include>
+	        </includes>
+	      </resource>
+	    </resources>
 		<plugins>
 
 			<!-- GWT Maven Plugin -->
